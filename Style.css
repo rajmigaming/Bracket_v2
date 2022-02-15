@@ -1,0 +1,401 @@
+
+:root {
+    --Blue: #002747;
+    --GBlue1: rgb(38, 51, 105);
+    --GBlue2: rgb(0, 0, 0);
+    --Lblue: #85ceff;
+    --White: #ffffff;
+    --Grey: #3d3d3d;
+    --Black: rgb(34, 34, 34);
+    --Gradient-Background: rgb(34, 34, 34);
+    --Gradient-Black: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,109,252,0) 100%);  
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url(/Bracket_With_Popup_Save/Bebas-Regular.ttf);
+}
+
+
+*{
+    margin: 0px;
+}
+
+.Name:empty:focus::before{
+    content:"Player";
+}
+
+body{
+    margin: 5px;
+    background: linear-gradient(90deg, rgb(7, 10, 29) 0%, rgb(0, 22, 110) 100%);
+    min-width: 1000px;
+}
+.Container{
+    display: flex;
+    margin-top: 10px;
+}
+
+.Branch_1,.Branch_2,.Branch_3,.Branch_4,.Branch_5{
+    
+    width: 290px;
+    flex-wrap: wrap;
+
+}
+
+select.Result{
+    font-size: 20px;
+    border-radius: 4px;
+
+}
+
+label{
+    display: flex;
+    font-size: 18px;
+    border-radius: 4px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,109,252,0) 100%);
+    width: 60%;
+    color: var(--White);
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 0px;
+}
+
+label,select,.Match_Class{
+    font-family: "Bebas";
+    font-size: 18px;
+    font-weight:lighter;
+    letter-spacing: .5px;
+
+}
+
+#Clean_Settings:hover{
+    background-color: rgb(150, 0, 0);
+    cursor: pointer;
+}
+
+#Setting_Choice:hover,#Choice:hover{
+    background-color: rgb(255, 236, 68);
+    cursor: pointer;
+}
+
+#Save_Results:hover{
+    background-color: rgb(66, 255, 75);
+    cursor: pointer;
+}
+
+.Sheet:hover{
+    background-color: rgb(58, 83, 58);
+    cursor: pointer;
+}
+
+
+.Match_Class{
+    font-size: 16px;
+    border-radius: 4px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,109,252,0) 100%);
+    color: var(--White);
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 0px;  
+    width: 20%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 250px 40px;
+}
+
+/*-----------------------------------------------*/
+/* Bracket Lines*/
+
+.Container_Match_Grid{
+    margin-top: 5px;/*change distance to top*/
+}
+.Container_Match_Grid_2{
+    margin-top: 35px;/*change distance to top*/
+}
+.Container_Match_Grid_3{
+    margin-top: 110px; /*change distance to top*/
+}
+.Container_Match_Grid_4{
+    margin-top: 260px; /*change distance to top*/
+}
+.Container_Match_Grid_5{
+    margin-top: 555px; /*change distance to top*/
+}
+.Container_Match_Grid_6{
+    margin-top: 1155px; /*change distance to top*/
+}
+
+.Line_Grid,.Line_Grid_2,.Line_Grid_3,.Line_Grid_4,.Line_Grid_5{
+    display: grid;
+    grid-template-columns: 40px 50px;
+  }
+  .Line_Grid{
+    margin-top: 35px; /*Change +30 of Match_Grid*/
+  }
+  .Line_Grid_2{
+    margin-top: 65px; /*Change +30 of Match_Grid*/
+  }
+  .Line_Grid_3{
+    margin-top: 140px; /*Change +30 of Match_Grid*/
+  }
+  .Line_Grid_4{
+    margin-top: 290px; /*Change +30 of Match_Grid*/
+  }
+  .Line_Grid_5{
+    margin-top: 585px; /*Change +30 of Match_Grid*/
+  }
+
+  .Object1,.Object1_2,.Object1_3,.Object1_4,.Object1_5 {
+    width: 40px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    border-left: 0;
+  }
+
+    .Object1 {
+    height: 60px; /*change*/
+  }
+    .Object1_2 {
+    height: 150px; /*change*/ 
+  }  
+    .Object1_3 {
+    height: 300px; /*change*/
+  }
+    .Object1_4 {
+    height: 595px; /*change*/
+  }
+    .Object1_5 {
+    height: 1200px; /*change*/
+  }
+
+  .Object2,.Object2_2,.Object2_3,.Object2_4,.Object2_5{
+    width: 20px;
+    border: 0;
+    border-bottom: 5px solid rgb(255, 255, 255);
+  }
+   .Object2{
+    height: 30px;  /*change /2 of above*/
+  }
+    .Object2_2{
+    height: 75px;  /*change /2 of above*/
+  }
+    .Object2_3{
+    height: 150px;  /*change above / 2*/
+  }
+    .Object2_4{
+    height: 297px;  /*change above / 2*/
+  }
+    .Object2_5{
+    height: 600px;  /*change above / 2*/
+  }
+
+
+.Match_Flex,.Match_Flex_2,.Match_Flex_3,.Match_Flex_4,.Match_Flex_5,.Match_Flex_6{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Match_Flex{
+    height: 150px; /*Size of box*/
+}
+.Match_Flex_2{
+    height: 300px;/*prev x2*/
+}
+.Match_Flex_3{
+    height: 600px;/*prev x2*/
+}
+.Match_Flex_4{
+    height: 1200px;/*prev x2*/
+}
+.Match_Flex_5{
+    height: 2400px;/*prev x2*/
+}
+
+  .Match_Grid,.Match_Grid_2,.Match_Grid_3,.Match_Grid_4,.Match_Grid_5,.Match_Grid_6{
+    display: grid;
+    grid-template-columns: 180px 45px;
+    grid-template-rows:  56px;
+    background-color: var(--Black);
+    margin-left: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    border: solid var(--White) 3px;
+    }
+
+.Match_Grid{
+margin-bottom: 5px; /*change distance to other cell*/
+}
+.Match_Grid_2{
+margin-bottom: 90px; /*change distance to other cell*/
+}
+.Match_Grid_3{
+margin-bottom: 235px; /*change distance to other cell*/
+}
+.Match_Grid_4{
+margin-bottom: 535px; /*change distance to other cell*/
+}
+.Match_Grid_5{
+margin-bottom: 1140px; /*change distance to other cell*/
+}
+.Match_Grid_6{
+margin-bottom: 555px; /*change distance to other cell*/
+}
+
+/*-----------------------------------------------*/
+
+/* Bracket ->>>>>>>>>>>>>>>*/
+input.IName{
+    font-family:"Bebas";
+    font-size: 16px;
+    display: block;
+    color: var(--White);
+    background: none;
+    border:none;
+    outline: none;
+    padding-right: 4px;
+    align-content: left;
+
+}
+Input.IResult{
+    font-family:"Bebas";
+    font-size: 16px;
+    color: var(--White);
+    background: none;
+    border:none;
+    outline: none;
+    width: 30px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+}
+/* Bracket ->>>>>>>>>>>>>>>*/
+Div.Name{
+    text-indent: 5px;
+    font-family:"Bebas";
+    font-size: 16px;
+    background-color: rgb(7, 9, 17);
+    height: 22px;
+    color: var(--White);
+    align-content: left;
+    justify-content: center;
+    align-content: center;
+    padding: 3px;
+}
+Div.Result{
+    font-family:"Bebas";
+    
+    font-size: 16px;
+    background-color: rgb(21, 26, 48);
+    color: var(--White);
+    height: 22px;
+    width: 30px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 3px;
+
+}
+
+/*----------------------------Pop Up----------------------------*/
+/* Pop_Up */
+.Container_For_name_Result{
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 1fr;
+}
+
+.PopUp{
+    top: 10%;
+    left: 10%;
+    min-width: 1000px;
+    max-width: 900px;
+    background: linear-gradient(60deg, var(--GBlue1) 0%, var(--GBlue2) 100%);
+    position: absolute;
+    border: 2px solid var(--White);
+    /* <-------------------*/ 
+    display: flex;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+}
+.Move_Item{
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.Move{
+padding-top: 10px;
+color: rgba(104, 144, 255, 0.0);
+height: auto;
+cursor: pointer;
+background-color: rgba(104, 144, 255, 0.11);
+
+}
+.Move:hover{
+    color: var(--White);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: var(--Black);
+
+}
+
+.PopUp_Content{
+    min-width: 750px;
+    max-width: 750px;
+    border-radius: 4px;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+}
+
+.Popup_Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Close{
+position: absolute;
+top: 0;
+right: 1%;
+font-size: 42px;
+color: blanchedalmond;
+transform: rotate(45deg);
+cursor: pointer;
+}
+
+/*Pup up Name (Div)*/
+.Pop_Name{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    border: 1px black solid;
+    font-family: "Bebas";
+
+}
+
+.Pop_Res{
+justify-self: center;
+}
+
+hr{
+    margin: 5px;
+}
+
+.Setting_text{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
